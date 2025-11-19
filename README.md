@@ -1,20 +1,23 @@
 # AI_QUIZ_GEN
+---
+#active link:
 
-# 📘 AI Quiz Generator (PDF → MCQ Generator)
+
+#  AI Quiz Generator (PDF → MCQ Generator)
 
 The **AI Quiz Generator** is an NLP-powered application that automatically generates high-quality **multiple-choice questions (MCQs)** from any uploaded PDF.
 Built using **Python, Streamlit, NLTK, and PyMuPDF**, this tool extracts meaningful concepts, identifies key nouns, and forms MCQs with distractors — completely offline.
 
 ---
 
-## 🚀 Features
+##  Features
 
-### ✅ **PDF Text Extraction**
+###  **PDF Text Extraction**
 
 * Uses **PyMuPDF (fitz)** to extract clean text from uploaded PDFs.
 * Automatically removes unwanted characters, URLs, and noisy content.
 
-### ✅ **Smart Question Generation**
+###  **Smart Question Generation**
 
 * Generates MCQs based on **noun extraction** and **POS tagging**.
 * Ensures:
@@ -23,18 +26,18 @@ Built using **Python, Streamlit, NLTK, and PyMuPDF**, this tool extracts meaning
   * Clean, meaningful fill-in-the-blank questions.
   * Intelligent distractors using noun pools.
 
-### ✅ **NLP-Powered Processing**
+###  **NLP-Powered Processing**
 
 * NLTK tokenizers (sent_tokenize, word_tokenize)
 * POS tagging using `averaged_perceptron_tagger_eng`
 * Custom blacklist filtering to avoid meaningless MCQs.
 
-### ✅ **Interactive Streamlit UI**
+###  **Interactive Streamlit UI**
 
 * Upload PDF → Select number of questions → Get MCQs instantly.
 * Clean UI with quiz cards, score display, and reset option.
 
-### ✅ **Results & Evaluation**
+###  **Results & Evaluation**
 
 * Shows:
 
@@ -44,7 +47,7 @@ Built using **Python, Streamlit, NLTK, and PyMuPDF**, this tool extracts meaning
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component     | Library                              |
 | ------------- | ------------------------------------ |
@@ -56,28 +59,28 @@ Built using **Python, Streamlit, NLTK, and PyMuPDF**, this tool extracts meaning
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```
 git clone <your-repo-link>
 cd ai-quiz-generator
 ```
 
-### 2️⃣ Install dependencies
+###  Install dependencies
 
 ```
 pip install streamlit pymupdf nltk
 ```
 
-### 3️⃣ Run NLTK downloads (will auto-download if missing)
+###  Run NLTK downloads (will auto-download if missing)
 
 ```
 python -m nltk.downloader punkt punkt_tab averaged_perceptron_tagger_eng
 ```
 
-### 4️⃣ Run the application
+###  Run the application
 
 ```
 streamlit run quiz_app.py
@@ -85,7 +88,7 @@ streamlit run quiz_app.py
 
 ---
 
-## 📚 How It Works (Pipeline)
+##  How It Works (Pipeline)
 
 ### **1. PDF Input**
 
@@ -118,10 +121,10 @@ User uploads a `.pdf` file.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-📦 AI-Quiz-Generator
+ AI-Quiz-Generator
 │
 ├── quiz_app.py        # Main Streamlit application
 ├── README.md          # Project documentation
@@ -131,24 +134,24 @@ User uploads a `.pdf` file.
 
 ---
 
-## 🌟 Future Improvements
+##  Future Improvements
 
-* ⭐ Add option to export MCQs to PDF / Word
-* ⭐ Add support for images/diagrams in PDFs
-* ⭐ Improve distractor selection using word embeddings
-* ⭐ Add difficulty-level selectors (easy/medium/hard)
-* ⭐ Add online version hosted on Streamlit Cloud
+*  Add option to export MCQs to PDF / Word
+*  Add support for images/diagrams in PDFs
+*  Improve distractor selection using word embeddings
+*  Add difficulty-level selectors (easy/medium/hard)
+*  Add online version hosted on Streamlit Cloud
 
 ---
 
-## 👨‍💻 Team Credits
+##  Team Credits
 
 **Developed by:**
 
 * Gaurav Yadav
-* Mayank Kaushik
 * Aadarsh Tripathi
-* Satyam Srivastava
+* Mayank Kaushik
+* * Satyam Srivastava
   *(1CSE17)*
 
 ---
@@ -160,10 +163,10 @@ Fork the repo, submit PRs, or reach out for collaboration.
 
 ---
 
-## ⭐ If you like this project
+##  If you like this project
 
-Don’t forget to **star ⭐ the repository** and share it with others!
+Don’t forget to **star the repository** and share it with others!
 
 ---
 
-### 🎉 Enjoy generating smart, concept-based quizzes automatically!
+###  Enjoy generating smart, concept-based quizzes automatically!
