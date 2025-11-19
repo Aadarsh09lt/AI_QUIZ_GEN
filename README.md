@@ -1,6 +1,6 @@
 # AI_QUIZ_GEN
----
-#active link:
+
+*active link:https://aiquizgen-jvnvpgwvvcywg5hpilqbng.streamlit.app/
 
 
 #  AI Quiz Generator (PDF → MCQ Generator)
@@ -58,32 +58,6 @@ Built using **Python, Streamlit, NLTK, and PyMuPDF**, this tool extracts meaning
 | Styling       | Custom CSS injected inside Streamlit |
 
 ---
-
-##  Installation & Setup
-
-### Clone the repository
-
-```
-git clone <your-repo-link>
-cd ai-quiz-generator
-```
-
-###  Install dependencies
-
-```
-pip install streamlit pymupdf nltk
-```
-
-###  Run NLTK downloads (will auto-download if missing)
-
-```
-python -m nltk.downloader punkt punkt_tab averaged_perceptron_tagger_eng
-```
-
-###  Run the application
-
-```
-streamlit run quiz_app.py
 ```
 
 ---
