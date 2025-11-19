@@ -1,4 +1,4 @@
 streamlit
-PyMuPDF
-nltk
+pymupdf
+nltk>=3.9
 
