@@ -211,7 +211,8 @@ if st.session_state["quiz_data"]:
 
 # Footer
 st.markdown("---")
-st.caption("Project by: Gaurav Yadav, Mayank Kaushik, Aadarsh Tripathi, Satyam Srivastava [1CSE17]")
+st.caption("Project by: Gaurav Yadav,Aadarsh Tripathi, Mayank Kaushik, Satyam Srivastava [1CSE17]")
+
 
 
 
