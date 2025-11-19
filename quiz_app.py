@@ -5,9 +5,9 @@ import os
 import random
 import shutil
 import zipfile
-import re  # <--- ADDED THIS for cleaning text
+import re  #ADDED THIS for cleaning text
 
-# --- 1. Setup NLTK Resources ---
+#  Setup NLTK Resources 
 nltk_data_dir = os.path.join(os.path.expanduser("~"), "nltk_data")
 if not os.path.exists(nltk_data_dir):
     os.makedirs(nltk_data_dir)
@@ -30,7 +30,7 @@ for pkg in required_packages:
 
 from nltk.tokenize import sent_tokenize, word_tokenize
 
-# --- 2. Helper Functions ---
+# Helper Functions 
 
 # STOP LIST: Words we do NOT want as answers (Dates, Times, Generic words)
 DATE_BLACKLIST = {
@@ -57,7 +57,7 @@ def extract_text_from_pdf(file):
     with fitz.open(stream=file.read(), filetype="pdf") as pdf:
         for page in pdf:
             text += page.get_text("text") + "\n"
-    return preprocess_text(text) # <--- Clean it immediately
+    return preprocess_text(text) #Clean it immediately
 
 def get_nouns(text):
     words = word_tokenize(text)
@@ -129,7 +129,7 @@ def generate_mcqs(text, num_questions=5):
 
     return questions
 
-# --- 3. Streamlit UI ---
+#  Streamlit UI 
 
 st.set_page_config(page_title="Quiz Generator", layout="wide")
 st.title("Quiz Generator")
@@ -212,6 +212,7 @@ if st.session_state["quiz_data"]:
 # Footer
 st.markdown("---")
 st.caption("Project by: Gaurav Yadav, Mayank Kaushik, Aadarsh Tripathi, Satyam Srivastava [1CSE17]")
+
 
 
 
